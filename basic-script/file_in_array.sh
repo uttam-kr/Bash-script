@@ -7,3 +7,16 @@ while IFS='' read -n1 c; do
 done < "$1"
 echo "${#myarray[@]}"
 echo "${myarray[@]}"
+
+
+
+
+#declare -a uttam
+#let i=0
+#while IFS='' read -n1 c;
+#	do#
+#		uttam[i]="${c}"
+#		((++i))
+#	done < "$1"
+#	echo "${#uttam[@]}"
+#	echo "${uttam[@]}"
