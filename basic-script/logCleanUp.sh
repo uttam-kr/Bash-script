@@ -4,14 +4,14 @@ logCleanUp(){
         AvailableSpace=`df -h| awk 'NR==2 {print $4}'`
         echo "AvailableSpace: $AvailableSpace"
 
-        cd /reuters/SOFTWARE/trva_core/delta-data/DeltaControlData/logdir/
+        cd /logdir/
         total=`ls * |wc -l`
         if [ $total -ge 0 ]; then
 
                 echo "log files count"
                 echo $total
                 echo "clean up action in progress"
-        #       rm /reuters/SOFTWARE/trva_core/delta-data/DeltaControlData/logdir/*.log
+        #    /logdir/*.log
         else
                 echo "No log-file to delete"
                 exit 1
