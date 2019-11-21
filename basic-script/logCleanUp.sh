@@ -11,7 +11,7 @@ logCleanUp(){
                 echo "log files count"
                 echo $total
                 echo "clean up action in progress"
-        #    /logdir/*.log
+        #  rm /logdir/*.log
         else
                 echo "No log-file to delete"
                 exit 1
